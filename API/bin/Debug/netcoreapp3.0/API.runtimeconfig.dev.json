@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\alxac\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\alxac\\.nuget\\packages"
+    ]
+  }
+}
