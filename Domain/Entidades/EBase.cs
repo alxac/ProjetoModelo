@@ -2,7 +2,7 @@
 
 namespace Domain.Entidades
 {
-    public class EntidadeBase
+    public class EBase
     {
         [Display(Name = "Código")]
         public int Id { get; set; }

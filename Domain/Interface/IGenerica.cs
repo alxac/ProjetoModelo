@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace Aplicacao.Interface
+namespace Domain.Interface
 {
-    public interface InterfaceGenericaApp<T> where T : class
+    public interface IGenerica<T> where T : class
     {
         void Adicionar(T Objeto);
         void Atualizar(T Objeto);

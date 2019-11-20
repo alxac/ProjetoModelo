@@ -1,6 +1,5 @@
 ﻿using Aplicacao.Interface;
 using Domain.Entidades;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ProjetoModelo.Controllers
@@ -34,12 +33,12 @@ namespace ProjetoModelo.Controllers
         // POST: Produto/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Produto collection)
+        public ActionResult Create(Produto produto)
         {
             try
             {
                 // TODO: Add insert logic here
-                produtoApp.Adicionar(collection);
+                produtoApp.Adicionar(produto);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -57,12 +56,12 @@ namespace ProjetoModelo.Controllers
         // POST: Produto/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, Produto collection)
+        public ActionResult Edit(int id, Produto produto)
         {
             try
             {
                 // TODO: Add update logic here
-                produtoApp.Atualizar(collection);
+                produtoApp.Atualizar(produto);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -80,12 +79,12 @@ namespace ProjetoModelo.Controllers
         // POST: Produto/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, Produto collection)
+        public ActionResult Delete(int id, Produto produto)
         {
             try
             {
                 // TODO: Add delete logic here
-                produtoApp.Excluir(collection);
+                produtoApp.Excluir(produto);
                 return RedirectToAction(nameof(Index));
             }
             catch

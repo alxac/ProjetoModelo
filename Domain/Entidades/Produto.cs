@@ -2,7 +2,7 @@
 
 namespace Domain.Entidades
 {
-    public class Produto : EntidadeBase
+    public class Produto : EBase
     {
         [Display(Name = "Preço")]
         public decimal Preco { get; set; }

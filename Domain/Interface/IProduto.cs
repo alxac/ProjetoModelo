@@ -2,7 +2,7 @@
 
 namespace Domain.Interface
 {
-    public interface IProduto : InterfaceGenerica<Produto>
+    public interface IProduto : IGenerica<Produto>
     {
     }
 }

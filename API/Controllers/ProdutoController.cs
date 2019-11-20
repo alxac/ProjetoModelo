@@ -15,7 +15,7 @@ namespace API.Controllers
         {
             produtoApp = _produtoApp;
         }
-        // GET: api/Produto
+
         [HttpGet]
         public IEnumerable<Produto> Get()
         {

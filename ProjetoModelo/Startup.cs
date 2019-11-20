@@ -29,7 +29,7 @@ namespace ProjetoModelo
         {
             services.AddControllersWithViews();
 
-            services.AddSingleton(typeof(InterfaceGenerica<>), typeof(RepositorioGenerico<>));
+            services.AddSingleton(typeof(IGenerica<>), typeof(RepositorioGenerico<>));
             services.AddSingleton<IProduto, RepositorioProduto>();
             services.AddSingleton<IProdutoApp, ProdutoApp>();
         }

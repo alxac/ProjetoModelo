@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infra.Repositorio
 {
-    public class RepositorioGenerico<T> : InterfaceGenerica<T>, IDisposable where T : class
+    public class RepositorioGenerico<T> : IGenerica<T>, IDisposable where T : class
     {
         private readonly DbContextOptions<Contexto> _optionBuilder;
 

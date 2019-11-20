@@ -2,7 +2,7 @@
 
 namespace Aplicacao.Interface
 {
-    public interface IProdutoApp : InterfaceGenericaApp<Produto>
+    public interface IProdutoApp : IGenericaApp<Produto>
     {
     }
 }
