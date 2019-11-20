@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Aplicacao.Aplicacao;
 using Aplicacao.Interface;
 using Domain.Interface;
+using Domain.Servicos;
 using Infra.Repositorio;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,6 +33,7 @@ namespace ProjetoModelo
             services.AddSingleton(typeof(IGenerica<>), typeof(RepositorioGenerico<>));
             services.AddSingleton<IProduto, RepositorioProduto>();
             services.AddSingleton<IProdutoApp, ProdutoApp>();
+            services.AddSingleton<IProdutoServico, ProdutoServico>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

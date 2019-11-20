@@ -2,7 +2,7 @@
 
 namespace Domain.Entidades
 {
-    public class EBase
+    public class EBase : Notifica.Notifica
     {
         [Display(Name = "Código")]
         public int Id { get; set; }

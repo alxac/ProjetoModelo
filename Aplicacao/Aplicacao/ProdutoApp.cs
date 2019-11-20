@@ -8,14 +8,21 @@ namespace Aplicacao.Aplicacao
     public class ProdutoApp : IProdutoApp
     {
         IProduto _iProduto;
+        IProdutoServico _iProdutoServ;
 
-        public ProdutoApp(IProduto iProduto)
+        public ProdutoApp(IProduto iProduto, IProdutoServico iProdutoServ)
         {
             _iProduto = iProduto;
+            _iProdutoServ = iProdutoServ;
         }
         public void Adicionar(Produto Objeto)
         {
             _iProduto.Adicionar(Objeto);
+        }
+
+        public Produto AdicionaVerificandoNome(Produto produto)
+        {
+            return _iProdutoServ.AdicionaVerificandoNome(produto);
         }
 
         public void Atualizar(Produto Objeto)

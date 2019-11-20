@@ -1,6 +1,7 @@
 ﻿using Aplicacao.Interface;
 using Domain.Entidades;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 
 namespace ProjetoModelo.Controllers
 {
@@ -38,8 +39,17 @@ namespace ProjetoModelo.Controllers
             try
             {
                 // TODO: Add insert logic here
-                produtoApp.Adicionar(produto);
-                return RedirectToAction(nameof(Index));
+                //produtoApp.Adicionar(produto);
+                //return RedirectToAction(nameof(Index));
+                produto = produtoApp.AdicionaVerificandoNome(produto);
+                if (produto.Notificacoes.Any())
+                {
+                    foreach (var item in produto.Notificacoes)
+                    {
+                        ModelState.AddModelError(item.NomeProdriedade, item.Mensagem);
+                    }
+                }
+                return View(produto);
             }
             catch
             {
