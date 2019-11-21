@@ -1,7 +1,9 @@
 D:\C#\ProjetoModelo\Infra\bin\Debug\netcoreapp3.0\Infra.deps.json
 D:\C#\ProjetoModelo\Infra\bin\Debug\netcoreapp3.0\Infra.dll
 D:\C#\ProjetoModelo\Infra\bin\Debug\netcoreapp3.0\Infra.pdb
+D:\C#\ProjetoModelo\Infra\bin\Debug\netcoreapp3.0\Aplicacao.dll
 D:\C#\ProjetoModelo\Infra\bin\Debug\netcoreapp3.0\Domain.dll
+D:\C#\ProjetoModelo\Infra\bin\Debug\netcoreapp3.0\Aplicacao.pdb
 D:\C#\ProjetoModelo\Infra\bin\Debug\netcoreapp3.0\Domain.pdb
 D:\C#\ProjetoModelo\Infra\obj\Debug\netcoreapp3.0\Infra.csprojAssemblyReference.cache
 D:\C#\ProjetoModelo\Infra\obj\Debug\netcoreapp3.0\Infra.AssemblyInfoInputs.cache

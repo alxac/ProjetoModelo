@@ -2124,6 +2124,7 @@
       },
       "Infra/1.0.0": {
         "dependencies": {
+          "Aplicacao": "1.0.0",
           "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.0.1"

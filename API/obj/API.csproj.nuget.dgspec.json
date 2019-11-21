@@ -241,6 +241,9 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
+              "D:\\C#\\ProjetoModelo\\Aplicacao\\Aplicacao.csproj": {
+                "projectPath": "D:\\C#\\ProjetoModelo\\Aplicacao\\Aplicacao.csproj"
+              },
               "D:\\C#\\ProjetoModelo\\Domain\\Domain.csproj": {
                 "projectPath": "D:\\C#\\ProjetoModelo\\Domain\\Domain.csproj"
               }
